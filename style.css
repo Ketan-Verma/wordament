@@ -1,0 +1,50 @@
+
+:root {
+    --bg:#333;
+    --card: #1e90ff;
+    --card-text: #ffffff;
+    --card-sel:orange;
+    --card-found:green;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+ background-color:var(--bg,#333);   
+}
+.card{
+    width: 8em;
+    height: 8em;
+    background-color:var(--card,orange);
+    margin: 0.1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.s;
+}
+
+.char{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var(--card-text,white);
+    text-transform: uppercase;
+    font-size: 5em;
+}
+.grid{
+    padding: 1em;
+    user-select: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    width: fit-content;
+}
+.score-card{
+    padding: 1em;   
+    color: var(--card-text);
+}
+#score{
+    color: var(--card-sel);
+}
